@@ -4,13 +4,13 @@ import * as React from "react"
 import About from './components/about.jsx';
 import Projects from './components/projects.jsx';
 import Footer from './components/footer.jsx';
-import Halsinge from "./images/halsingelinnevaveri.png";
-import Catcollection from "./images/catcollection.png";
-import CountDown from './images/countdowntimer.png'
-import Dizzydream from "./images/dizzydream.png";
-import Weatherapp from "./images/weatherapp.png";
-import CocktailDatab from './images/cocktailDataB.png'
-import Snapspiration from './images/Snapspiration.png'
+import Halsinge from "../public/images/halsingelinnevaveri.png";
+import Catcollection from "../public/images/catcollection.png";
+import CountDown from '../public/images/countdowntimer.png'
+import Dizzydream from "../public/images/dizzydream.png";
+import Weatherapp from "../public/images/weatherapp.png";
+import CocktailDatab from '../public/images/cocktailDataB.png'
+import Snapspiration from '../public/images/Snapspiration.png'
 
 import './style/first.css';
 

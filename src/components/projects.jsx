@@ -3,8 +3,8 @@ import { useState } from 'react';
 import "../style/projects.css"
 
 
-import Github from '../images/github-icon.svg';
-import Website from '../images/web-icon.svg';
+import Github from '../../public/images/github-icon.svg';
+import Website from '../../public/images/web-icon.svg';
 
 const Projects = ({unique, id, image, heading, content, link})=>{
 
