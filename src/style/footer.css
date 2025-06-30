@@ -1,0 +1,20 @@
+footer{
+    background-color: black;
+    width: 100vw;
+    margin: auto 0 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+.gitFooter{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+   .gitFooter svg{
+    transition: transform ease-in 0.2s;
+   }
+  .gitFooter svg:hover{
+    transform: scale(.7);
+  }

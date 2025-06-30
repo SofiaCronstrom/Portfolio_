@@ -1,0 +1,100 @@
+/*ABOUT PAGE*/
+
+  .index-name{
+    font-family: var(--paraG-font);
+    color: #222221;
+    font-weight: bolder;
+    font-size: 2em;
+    letter-spacing: 0.02em;
+    }
+    
+    .index-header, .index-2{
+      font-family: var(--paraG-font);
+      color: #222221;
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+  
+  .text-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .profile-container{
+    background-color: #F8DB3C;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 30px;
+  }
+
+
+  .profile{
+ 
+    margin: auto 0;
+  }
+  .text-head{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8DB3C;
+    font-weight: 300;
+    font-family: var(--paraG-font);
+    color: #222221;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  /*.text-contact{
+    background-color: #F8DB3C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    font-weight: 300;
+    font-family: var(--paraG-font);
+    color: #222221;
+    font-size: 16px;
+  }*/
+
+  .text-head p{
+        padding: 1.5rem;
+    line-height: 1.3rem;
+    
+  }
+  .mail{
+   font-size: 20px;
+  }
+  .gitText, .linkedText{
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+   .gitText svg{
+    transition: transform ease-in 0.2s;
+   }
+  .gitText svg:hover{
+    transform: scale(.7);
+  }
+ 
+ 
+
+  @media only screen and (max-width: 850px){
+  
+   .text-container{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+      margin-left: 0;
+      justify-items: start;
+    }
+   .text-head{
+    width: 90vw;
+    align-items: start;
+   }
+   .text-head p{
+    padding-left: 10px;
+   }
+
+  }

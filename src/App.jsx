@@ -1,35 +1,76 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import * as React from "react"
 
+import About from './components/about.jsx';
+import Projects from './components/projects.jsx';
+import Footer from './components/footer.jsx';
+import Sleepcycle from "./images/sleepcycle.png";
+import Mershowroom from "./images/mershowroom.png";
+import Dizzydream from "./images/dizzydream.png";
+import Weatherapp from "./images/weatherapp.png";
+import Meltdown from './images/meltdown.png';
+
+import './style/first.css';
+
+const App = () => {
+  
+
+  const accordionData = [
+    {
+      unique: "item1",
+      id: "1",
+      image: `${Meltdown}`,
+      heading: `Meltdown mgmt`,
+   },
+    {
+        unique: "item2",
+        id: "2",
+        image: `${Sleepcycle}`,
+        heading: "Sleep Cycle, inv. site",
+        link: "https://investors.sleepcycle.com/"
+     },
+     {
+        unique: "item3",
+        id: "3",
+        image: `${Mershowroom}`,
+        heading: "Virtual showroom",
+        content: "https://github.com/SofiaCronstrom/MER_showroom",
+        link: "https://mershowroom.netlify.app/"
+     },
+     {  
+        unique: "item4",
+        id: "4",
+        image: `${Dizzydream}`,
+        heading: "WebVR game",
+        content: "https://github.com/SofiaCronstrom/dizzy-dream",
+        link: "https://sofiacronstrom.github.io/dizzy-dream/"
+     },
+     {
+        unique: "item5",
+        id: "5",
+        image: `${Weatherapp}`,
+        heading: "Weather app",
+        content: "https://github.com/SofiaCronstrom/weather-app-async"
+     }
+
+    ];
+  
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    
+   <div className="wrapper-index">
+      <About/>
+        
+        <div className="project-index">
+              {accordionData.map(({ unique, id, image, heading, content, link }) => (
+              <Projects unique={unique} key={id} image={image}  content={content} link={link} heading={heading}/>
+              ))}
+       </div>
+      
+      <Footer />
+   </div>
+  
   )
+
 }
 
-export default App
+export default App;

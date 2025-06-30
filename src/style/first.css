@@ -1,0 +1,47 @@
+/* FIRST PAGE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
+:root{
+  --header-font: 'DM Serif Display', serif;
+  --paraG-font:  'Gowun Batang', serif;
+ 
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:black;
+}
+.wrapper-index{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+  @media only screen and (max-width: 1100px) {
+    .wrapper-index{
+      
+      display: flex;
+     
+    }
+    html {
+      font-size: 100%;
+    }
+    .index-header{
+       font-size: 1.5em;
+    }
+    .index-2{
+      font-size: 1em;
+    }
+  }  
+  @media only screen and (max-width: 750px){
+    .wrapper-index{
+      flex-direction: column;
+    }
+  }
