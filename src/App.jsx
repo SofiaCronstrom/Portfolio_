@@ -6,7 +6,7 @@ import Catcollection from "./images/catcollection.png";
 import CountDown from './images/countdowntimer.png'
 import Dizzydream from "./images/dizzydream.png";
 import Weatherapp from "./images/weatherapp.png";
-import CocktailDatab from './images/cocktailDataB.png'
+import CocktailDatab from './images/cocktailDatab.png'
 import Snapspiration from './images/Snapspiration.png'
 import './style/first.css';
 
